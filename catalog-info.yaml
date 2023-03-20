@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "quarkus-microservice"
+  annotations:
+    github.com/project-slug: kinneyjohn/quarkus-microservice
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - java
+    - quarkus
+  links:
+    - url: https://devspaces.apps.example-cluster.com/#https://github.com/kinneyjohn/quarkus-microservice?che-editor=che-incubator/che-code/insiders&devfilePath=.devfile-vscode.yaml
+      title: CodeReady Workspaces (VS Code)
+      icon: web
+    - url: https://devspaces.apps.example-cluster.com/#https://github.com/kinneyjohn/quarkus-microservice?che-editor=che-incubator/che-idea/next&devfilePath=.devfile-intellij.yaml
+      title: CodeReady Workspaces (JetBrains IntelliJ)
+      icon: web
+spec:
+  type: service
+  lifecycle: production
+  owner: "kinneyjohn"
